@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600&family=Julius+Sans+One&display=swap');
+
+:root {
+  --beige: #cbc8bf;
+  --black: #333333;
+  --navy: #476173;
+  --grey: #5b646a;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Julius Sans One';
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Archivo Narrow';
+  height: 100vh;
+  background-color: var(--beige);
+}
+
+header {
+  background-color: var(--navy);
+  height: 100px;
+}
+
+nav {
+  color: var(--beige);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links > a {
+  font-family: 'Julius Sans One';
+  color: #cbc8bf;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+#about > img {
+  position: relative;
+  z-index: 1;
+}
+
+#about {
+  background-color: var(--navy);
+  line-height: 1.65;
+  color: var(--beige);
+  position: relative;
+  top: -5px;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.portfolio-content {
+  padding: 20px;
+  width: 100%;
+}
+
+.bg {
+  background-position: bottom;
+}
+
+.cards {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(317px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.card {
+  margin: 0 20px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: white;
+  width: 317px;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+  height: 222px;
+  width: 319px;
+}
+
+.card-content > h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.card-content {
+  padding: 0 20px 20px;
+}
+
+#contact {
+  padding-top: 20px;
+  text-align: center;
+  background-color: var(--navy);
+  display: grid;
+  color: var(--beige);
+  justify-content: center;
+}
+
+.contact-card {
+  max-width: 600px;
+  color: var(--navy);
+  background-color: var(--beige);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  padding: 20px 40px;
+}
+
+input {
+  background: linear-gradient(
+    180deg,
+    rgba(237, 236, 233, 0.49) 0%,
+    #cbc8bf 100%
+  );
+  color: var(--black);
+  border: 1px solid #476173;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+  background: linear-gradient(180deg, #cbc8bf 0%, #476173 89.06%);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 10px;
+  color: whitesmoke;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background: linear-gradient(360deg, rgba(48, 90, 119, 0.94) 0%, #5b646a 100%);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+  color: var(--navy);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.my-site {
+  font-family: 'Julius Sans One';
+  text-decoration: none;
+  color: var(--navy);
+  padding: 5px;
+  transition: all 0.2s linear;
+  border-radius: 5px;
+}
+
+.my-site:hover {
+  background-color: var(--navy);
+  color: var(--beige);
+}

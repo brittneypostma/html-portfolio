@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img src="./images/hero.png" alt="hero" />
+      </div>
+
+      <div id="about">
+        <div class="about-content">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus
+            ullamcorper fermentum aliquet cursus convallis eget ut adipiscing.
+            Interdum pulvinar fermentum quam mi vestibulum sapien, diam. Euismod
+            turpis placerat in sagittis. Fringilla ipsum, in turpis aliquam
+            tellus diam viverra volutpat. Duis sed quis sollicitudin eu id
+            egestas sit. Odio urna sapien nam netus ac vitae leo, diam. Maecenas
+            convallis habitant fermentum facilisi a massa sollicitudin purus
+            adipiscing. Tristique sit lobortis felis, duis dui nisl imperdiet
+            suspendisse. Scelerisque imperdiet et quam facilisi volutpat
+            adipiscing enim pharetra. Felis bibendum fusce fermentum neque,
+            velit, integer nec. Vulputate vitae, egestas nunc, ac. Lectus
+            feugiat quis pellentesque adipiscing tellus ultrices. Ac pharetra,
+            massa rhoncus elit fringilla dictum orci. Amet sed lorem nisi,
+            libero mi eget. Aliquam nunc senectus risus dictum dictum odio. Nunc
+            diam proin lobortis non vel vitae mattis ultrices. Gravida felis,
+            et, consequat eget nunc sollicitudin placerat tortor. Pharetra dui
+            lorem a justo, volutpat ultricies leo pretium egestas. Aliquam
+            quisque nec, duis ullamcorper in quam non.
+          </p>
+        </div>
+      </div>
+
+    
+        <div id="portfolio" class="portfolio-content">
+          <h2>Portfolio</h2>
+
+          <div class="cards">
+
+            <div class="card">
+              <div class="card-img"><img src="./images/card1.png" /></div>
+
+              <div class="card-content">
+                <h3>Recipes</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tempus ullamcorper fermentum aliquet cursus convallis eget ut
+                  adipiscing. Interdum pulvinar fermentum quam mi vestibulum
+                  sapien, diam. Euismod turpis placerat in sagittis.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img"><img src="./images/card2.png" /></div>
+
+              <div class="card-content">
+                <h3>Workhard Anywhere</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tempus ullamcorper fermentum aliquet cursus convallis eget ut
+                  adipiscing. Interdum pulvinar fermentum quam mi vestibulum
+                  sapien, diam. Euismod turpis placerat in sagittis.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img"><img src="./images/card1.png" /></div>
+
+              <div class="card-content">
+                <h3>Recipes</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tempus ullamcorper fermentum aliquet cursus convallis eget ut
+                  adipiscing. Interdum pulvinar fermentum quam mi vestibulum
+                  sapien, diam. Euismod turpis placerat in sagittis.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img"><img src="./images/card2.png" /></div>
+
+              <div class="card-content">
+                <h3>Workhard Anywhere</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Tempus ullamcorper fermentum aliquet cursus convallis eget ut
+                  adipiscing. Interdum pulvinar fermentum quam mi vestibulum
+                  sapien, diam. Euismod turpis placerat in sagittis.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+          <div id="contact">
+            <h2>Contact</h2>
+            <div class="contact-card">
+              <form action="POST">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="First Last" />
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="email@email.com" />
+                <input type="submit" value="Contact Me" />
+              </form>
+            </div>
+          </div>
+
+          <footer>
+            <p>&copy; <span id="date"></span> </p>
+            <div class="links">
+              <a href="https://facebook.com"><img src="./images/fb.png" alt="facebook"></a>
+              <a href="https://twitter.com"><img src="./images/tweet.png" alt="twitter"></a>
+              <a href="https://linkedin.com"><img src="./images/in.png" alt="linkedIn"></a>
+            </div>
+            <a href="https://bdesigned.netlify.com/" class="my-site">b.Designed</a>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <script>
+      let today = new Date()
+      let date = today.getFullYear()
+      const span = document.getElementById('date')
+      let txt = document.createTextNode(date)
+      span.innerHTML = txt.textContent
+    </script>
+  </body>
+</html>
