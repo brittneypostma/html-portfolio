@@ -49,11 +49,6 @@ ul {
   list-style: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 body {
   font-family: 'Archivo Narrow';
   height: 100vh;
@@ -78,6 +73,10 @@ nav {
   color: #cbc8bf;
   text-decoration: none;
   margin: 0 20px;
+}
+
+.hero > img {
+  width: 100%;
 }
 
 #about > img {
@@ -199,11 +198,13 @@ footer {
   height: 50px;
   display: flex;
   justify-content: space-between;
+  justify-items: center;
   align-items: center;
   padding: 20px;
 }
 
 .my-site {
+  margin-left: 5px;
   font-family: 'Julius Sans One';
   text-decoration: none;
   color: var(--navy);
